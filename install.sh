@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NOCOLOR="\033[0"
+NOCOLOR="\033[0m"
 COLOR="\033[1;33m"
 
 SERVERFILESDIR="server"
@@ -34,8 +34,8 @@ function startup {
 	sed -i "s/difficulty=easy/difficulty=${DIFFICULTY}/g" "./server.properties"
 	sed -i "s/white-list=false/white-list=true/g" "./server.properties"
 	java -jar $SPIGOTVER
-	mv ../$PLUGINSDIR/* "./plugins/"
-	mv ../$DATAPACKSDIR/* "./world/datapacks/"
+	mv ../$PLUGINSDIR/* "./plugins"
+	mv ../$DATAPACKSDIR/* "./world/datapacks"
 }
 function main {
 	echo -e "${COLOR}Starting configuration process${NOCOLOR}"
