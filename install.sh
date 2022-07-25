@@ -5,7 +5,7 @@ COLOR="\033[1;33m"
 
 SERVERFILESDIR="server"
 PLUGINSDIR="plugins"
-DATAPACKDIR="datapacks"
+DATAPACKSDIR="datapacks"
 
 SPIGOTVER="spigot-1.19.jar"
 DIFFICULTY="normal"
