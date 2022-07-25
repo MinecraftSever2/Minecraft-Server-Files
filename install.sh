@@ -42,7 +42,7 @@ function main {
 	mkdir $SERVERFILESDIR
 	cd $SERVERFILESDIR
 	download_java
-	downlaod_spigot
+	download_spigot
 	startup
 	echo -e "${COLOR}Instalation completed${NOCOLOR}"
 }
